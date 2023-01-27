@@ -6,8 +6,20 @@ import (
 
 func main() {
 	fmt.Println(fact(3))
+	rec(3)
 }
-
+func rec(num int) {
+	if num == 0 {
+	return
+	}
+	if num % 2 == 0 {
+		fmt.Println(num + 1)
+		rec(num - 1)
+		} else {
+		fmt.Println(num + 2 )
+	}
+	fmt.Println(num -1 )
+}
 func fact(number int) int {
 	if number == 1 || number == 0 {
 		return 1
