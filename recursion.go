@@ -12,6 +12,9 @@ func rec(num int) {
 	if num == 0 {
 	return
 	}
+	rec (num - 1)
+	rec (num - 2)
+	fmt.Println(num -1)
 	if num % 2 == 0 {
 		fmt.Println(num + 1)
 		rec(num - 1)
